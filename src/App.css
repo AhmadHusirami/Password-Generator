@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  background-color: #e9f0fb;
+  font-family: "Poppins", sans-serif;
+}
+
+.icon {
+  font-size: xx-large;
+  margin-left: 70rem;
+  margin-top: 6rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.lang {
+  position: relative;
+  top: -34px;
+}
+
+.text-1 {
+  margin-left: 33rem;
+  font-size: 80px;
+  font-weight: bolder;
+  margin-top: 1rem;
+}
+
+.text-2 {
+  margin-left: 37rem;
+  font-size: 25px;
+  margin-top: -30px;
+}
+
+.generated-container {
+  display: flex;
+  align-items: center;
+  background-color: #dfeaf1;
+  max-width: 35rem;
+  height: 6rem;
+  margin-left: 38.8rem;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  position: relative;
+}
+
+.color-line {
+  width: 100%;
+  height: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0px 5px 5px 0px;
+  transition: background-color 0.5s ease, width 0.5s ease;
+}
+
+.generated-number {
+  flex-grow: 1;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.copy-icon {
+  flex-shrink: 0;
+  font-size: 2.5rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+.password-head {
+  font-weight: 500;
+  font-size: 18px;
+  margin-left: 40rem;
+  margin-top: 25px;
+}
+
+.generate-button {
+  display: block;
+  margin: 2rem auto;
+  padding: 10px 35px;
+  font-size: 16px;
+  border: none;
+  background-color: #bbc3d1;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5rem;
+  border-radius: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: calc(1rem + .5vw);
+}
+
+.generate-button:hover {
+  background-color: black;
+  color: #ffc82e;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.checkbox-label input[type='checkbox'] {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000000 !important;
+  border-radius: 3px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox-label input[type='checkbox']:checked::before {
+  content: '✔';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  font-size: 16px;
+  color: white;
+}
+
+.checkbox-label input[type='checkbox']:checked {
+  background-color: rgb(0, 0, 0);
+  border-color: red;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-weight: 700;
+  margin-left: 55px;
+}
+
+.right-options {
+  margin-left: 2rem;
+}
+
+.range-container {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-left: 39rem;
+}
+
+.range-input {
+  -webkit-appearance: none;
+  width: 230px;
+  height: 18px;
+  background: #000000;
+  border-radius: 10px;
+  outline: none;
+  margin-right: 10px;
+}
+
+.range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.range-input::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-value {
+  width: 45px;
+  height: 45px;
+  background-color: #000000;
+  color: #ffc82e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-left: -20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  color: rgb(0, 0, 0);
+  background-color: #e9f0fb;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: -10px;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100px;
+  margin-left: 0px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 2px;
+  padding-bottom: 10px;
+}
+
+.dropdown-content button {
+  color: black;
+  text-decoration: none;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  font-size: large;
+}
+
+.dropdown-content button:hover {}
+
+.dropdown_border {
+  border-bottom: 0.1px solid black;
+  margin-top: 10px;
+}
+
+.faq_title h2 {
+  margin-left: 32.5em;
+  margin-top: 3em;
+}
+
+.faq_title_1 {
+  margin-left: 39em;
+  margin-top: 2.5rem;
+}
+
+.answer_1 {
+  font-size: 1rem;
+  line-height: 1.9;
+  margin-bottom: 20px;
+  max-width: 500px;
+  margin-left: 38.9em;
+}
+
+.border {
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+  max-width: 500px;
+  margin-left: 38.9em;
+}
+
+.faq_title_2 {
+  margin-left: 39em;
+  margin-top: 2.5rem;
+}
+
+.answer_2 {
+  font-size: 1rem;
+  line-height: 1.9;
+  margin-bottom: 20px;
+  max-width: 500px;
+  margin-left: 38.9em;
+}
+
+.faq_title_3 {
+  margin-left: 39em;
+  margin-top: 2.5rem;
+}
+
+.answer_3 {
+  font-size: 1rem;
+  line-height: 1.9;
+  margin-bottom: 20px;
+  max-width: 500px;
+  margin-left: 38.9em;
+}
+
+.red_text {
+  color: red;
+}
+
+.faq_title_4 {
+  margin-left: 39em;
+  margin-top: 2.5rem;
+}
+
+.answer_4 {
+  font-size: 1rem;
+  line-height: 1.9;
+  margin-bottom: 20px;
+  max-width: 500px;
+  margin-left: 38.9em;
+}
+
+.faq_title_5 {
+  margin-left: 39em;
+  margin-top: 2.5rem;
+}
+
+.answer_5 {
+  font-size: 1rem;
+  line-height: 1.9;
+  margin-bottom: 20px;
+  max-width: 500px;
+  margin-left: 38.9em;
+}
+
+.faq_title_6 {
+  margin-left: 39em;
+  margin-top: 2.5rem;
+}
+
+.answer_6 {
+  font-size: 1rem;
+  line-height: 1.9;
+  margin-bottom: 20px;
+  max-width: 500px;
+  margin-left: 38.9em;
+}
+
+.faq_title_7 {
+  margin-left: 39em;
+  margin-top: 2.5rem;
+}
+
+.answer_7 {
+  font-size: 1rem;
+  line-height: 1.9;
+  margin-bottom: 20px;
+  max-width: 500px;
+  margin-left: 38.9em;
+}
+
+.extended_section {
+  padding-bottom: 20px;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer_url {
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer_url:hover {
+  color: #ffc82e;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px !important;
+  background-color: #e9f0fb;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
+
+/*********Responsive Design***********/
+
+
+@media screen and (max-width: 768px) {
+  .icon {
+    margin-left: 0rem;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+
+  .lang {
+    position: relative;
+    top: -34px;
+  }
+
+  .text-1 {
+    margin-left: 3.5rem;
+    font-size: 30px;
+    margin-top: 1rem;
+  }
+
+  .text-2 {
+    margin-left: 2rem;
+    font-size: 18px;
+    margin-top: -20px;
+  }
+
+  .generated-container {
+    max-width: 90vw;
+    margin-left: 0rem;
+  }
+
+  .color-line {
+    width: 100%;
+    height: 8px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0px 5px 5px 0px;
+    transition: background-color 0.5s ease, width 0.5s ease;
+  }
+
+  .generated-number {
+    font-size: 20px;
+    overflow-x: hidden;
+    white-space: nowrap;
+  }
+
+  .copy-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+  }
+
+  .password-head {
+    font-size: 16px;
+    margin-left: 2rem;
+    margin-top: 25px;
+  }
+
+  .range-container {
+    margin-left: 2rem;
+  }
+
+  .range-input {
+    width: 80vw;
+  }
+
+  .range-value {
+    margin-left: -20px;
+  }
+
+  .options {
+    margin-left: 0.5rem;
+  }
+
+  .right-options {
+    margin-left: 1rem;
+  }
+
+  .dropdown {
+    margin-left: 2rem;
+  }
+
+  .faq_title h2 {
+    margin-left: 2rem;
+    margin-top: 3em;
+    font-size: 24px;
+  }
+
+  .faq_title_1,
+  .faq_title_2,
+  .faq_title_3,
+  .faq_title_4,
+  .faq_title_5,
+  .faq_title_6,
+  .faq_title_7 {
+    margin-left: 2rem;
+    margin-top: 2.5rem;
+  }
+
+  .answer_1,
+  .answer_2,
+  .answer_3,
+  .answer_4,
+  .answer_5,
+  .answer_6,
+  .answer_7 {
+    margin-left: 2rem;
+    font-size: 14px;
+  }
+
+  .border {
+    margin-left: 0rem;
+  }
+
+  .extended_section {
+    padding-bottom: 20px;
+  }
+}
